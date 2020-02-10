@@ -1,17 +1,28 @@
 # Sample Demo
 
-Install Angular CLI:
+Install npm packages
+See npm and nvm version notes above
 
-npm install -g @angular/cli
-For more details about Angular CLI, please refer to: https://cli.angular.io/
+Install the npm packages described in the package.json and verify that it works:
 
-Run the project
-To run the demo project locally, just install dependencies and run the application in development mode:
+npm install
+npm start
+Doesn't work in Bash for Windows which does not support servers as of January, 2017.
 
-$ npm install
-$ ng serve -o
-Now you can open your browser and load http://localhost:4200
+The npm start command first compiles the application, then simultaneously re-compiles and runs the lite-server. Both the compiler and the server watch for file changes.
 
-Try the code, verify the current behavior. Update the code and configurations and test again!
+Shut it down manually with Ctrl-C.
 
-Please feel free to contact me if you have any question.
+You're ready to write your application.
+
+npm scripts
+We've captured many of the most useful commands in npm scripts defined in the package.json:
+
+npm start - runs the compiler and a server at the same time, both in "watch mode".
+npm run build - runs the TypeScript compiler once.
+npm run build:w - runs the TypeScript compiler in watch mode; the process keeps running, awaiting changes to TypeScript files and re-compiling when it sees them.
+npm run serve - runs the lite-server, a light-weight, static file server, written and maintained by John Papa and Christopher Martin with excellent support for Angular apps that use routing.
+Here are the test related scripts:
+
+npm test - compiles, runs and watches the karma unit tests
+npm run e2e - compiles and run protractor e2e tests, written in Typescript (*e2e-spec.ts)
