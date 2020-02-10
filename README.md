@@ -1,28 +1,25 @@
 # Sample Demo
+## Install dependencies
 
-Install npm packages
-See npm and nvm version notes above
+Install `Angular CLI`:
 
-Install the npm packages described in the package.json and verify that it works:
+```
+npm install -g @angular/cli
+```
 
-npm install
-npm start
-Doesn't work in Bash for Windows which does not support servers as of January, 2017.
+For more details about `Angular CLI`, please refer to: [https://cli.angular.io/](https://cli.angular.io/)
 
-The npm start command first compiles the application, then simultaneously re-compiles and runs the lite-server. Both the compiler and the server watch for file changes.
+## Run the project
 
-Shut it down manually with Ctrl-C.
+To run the demo project locally, just install dependencies and run the application in development mode:
 
-You're ready to write your application.
+```bash
+$ npm install
+$ ng serve -o
+```
 
-npm scripts
-We've captured many of the most useful commands in npm scripts defined in the package.json:
+Now you can open your browser and load [http://localhost:4200](http://localhost:4200)
 
-npm start - runs the compiler and a server at the same time, both in "watch mode".
-npm run build - runs the TypeScript compiler once.
-npm run build:w - runs the TypeScript compiler in watch mode; the process keeps running, awaiting changes to TypeScript files and re-compiling when it sees them.
-npm run serve - runs the lite-server, a light-weight, static file server, written and maintained by John Papa and Christopher Martin with excellent support for Angular apps that use routing.
-Here are the test related scripts:
+Try the code, verify the current behavior. Update the code and configurations and test again!
 
-npm test - compiles, runs and watches the karma unit tests
-npm run e2e - compiles and run protractor e2e tests, written in Typescript (*e2e-spec.ts)
+Please feel free to contact me if you have any question.
