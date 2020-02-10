@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+// a:hover{
+//     color: black;
+//     text-decoration: none;
+//     text-transform: uppercase;
+// }
+.container-fluid{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/app-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// .container{
+//     margin: 0px;
+//     padding: 20px 0px;
+//     width: 100%;
+// }
+#nav-brand{
+    height: 100px;
+    width: 300px;
+}
+#menu-list{
+ font-size: 20px;
+}
+.navbar-brand{
+    text-align: right;
+}
+.navbar-brand img{
+    display: inline-block;
+}
+
+#menu-list :hover{
+    background-color: transparent;
+   }
+
+.scrolled{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.scrolled a{
+    color: black;
+}
+.scrolled .menu-item-105{
+    border: 1px solid black; 
+    border-radius: 40px;
+}
